@@ -25,5 +25,5 @@ export function passwordValidator(password: string): boolean {
   }
   
   function containsUnderscore(password: string): boolean {
-    return /_/.test(password);
+    return password.includes('_');
   }
